@@ -1,3 +1,7 @@
+body {
+  background-color:#282c34;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +39,138 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.leftSide {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.rightSide {
+  display: flex;
+  justify-content: end;
+}
+
+.navLink {
+  color: white;
+}
+
+.navLink:hover{
+  opacity: 0.8;
+}
+
+.dark-bg {
+  background-color: #282c34;
+  position: sticky;
+  top:0;
+  margin-bottom: 10vh;
+  display: flex;
+  justify-content: center;
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.slider {
+  margin: 2vh 0vw 4vh 0vw;
+  width: 90vw;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 10px;
+  overflow: hidden;
+}
+
+.movie-card {
+  height: 25vh;
+}
+
+.poster{
+  height: 25vh;
+  object-fit: cover;
+}
+
+.poster:hover {
+  transform: scale(1.2);
+  z-index: 10;
+  overflow: visible;
+
+}
+
+.scrollLeft, .scrollRight {
+  position: relative;
+  top: 12.5vh;
+}
+
+.scrollLeft:hover, .scrollRight:hover {
+  transform:scale(0.95);
+}
+
+.slider-container {
+  text-align: left;
+}
+h4{
+  color: white;
+  margin-left: 10vw;
+}
+footer {
+  width: 80vw;
+  margin-left: 10vw;
+  margin-top: 5vh;
+}
+.social {
+  width: 25%;
+  margin-left: 1.5vw;
+  display: flex !important;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-bottom: 3vh;
+}
+
+footer a {
+  color: rgba(255, 255, 255, 0.6);
+  display: block;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+}
+footer a:hover {
+  color:rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+}
+.footer-links {
+  width: 100%;
+  justify-content: space-between !important;
+}
+
+.links-row {
+  width: 100%;
+}
+
+.links-col{
+  text-align: left;
+}
+
+.button {
+  display: flex;
+  justify-content: start;
+}
+.a-button{
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+}
+
+.a-button:hover{
+  color: rgba(255, 255, 255, 0.9);
+  transform: scale(0.95);
+}
+
+small{
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.7rem;
+  text-align: left;
+  display:flex;
+  justify-content: start;
+  margin-top: 1rem;
 }
